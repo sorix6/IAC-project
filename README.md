@@ -1,6 +1,6 @@
 # Deploying infrastructure as code
 
-This project contains CloudFormation configuration and scripts that allow for the deployment of an Apache Web Server application.  
+This project contains the CloudFormation configuration and scripts that allow for the deployment of an Apache Web Server application.  
 
 The built infrastructure should contain:
 
@@ -43,7 +43,7 @@ ssh -i keypair.pem ubuntu@public-dns-of-ec2-instance
 
 **It is important to mention that in order for this command to work, you need to make sure that your key pair on your local machine has the appropriate permissions ```chmod 600 keypair.pem``` (keypair needs to be read-only)**
 
-**If your EC2 instance is not Ubuntu, the user ```ubuntu``` should be replaced by the appropriate usernale for each operating system.**
+**If your EC2 instance is not Ubuntu, the user ```ubuntu``` should be replaced by the appropriate username for each operating system.**
 
 4. When building your stack, to retrive the image ID for a specific AMI, use the ```aws ec2 describe-image``` command with the appropriate filters.
 
